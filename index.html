@@ -13,40 +13,14 @@
         <tr style="padding:0px">
           <td style="padding:0px">
 
-            <!-- Header: Bio + Headshot -->
+            <!-- Bio section: content comes from data/bio.js -->
             <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
               <tbody>
                 <tr style="padding:0px">
                   <td style="padding:2.5%;width:63%;vertical-align:middle">
-                    <p class="name" style="text-align:left;">Fangshuo (Jasper) Liao</p>
-                    <p>
-                      I am a PhD candidate in Computer Science at
-                      <a href="https://csweb.rice.edu/">Rice University</a>
-                      in Houston, TX, advised by
-                      <a href="https://akyrillidis.github.io/about/">Dr. Anastasios Kyrillidis</a>.
-                      I also participate in the <a href="https://akyrillidis.github.io/aiowls/">AI-OWLS</a> research cluster.
-                      Before my PhD, I received a Bachelor of Science in Computer Science and
-                      Bachelor of Arts in Mathematics from Rice University in 2020.
-                    </p>
-                    <p>
-                      My research interest lies broadly in <strong>deep learning theory</strong>,
-                      <strong>convex and nonconvex optimization</strong>, and developing methods that
-                      provably improve the efficiency of solving machine learning problems.
-                      I try to answer: What is the theoretical guarantee of an algorithm?
-                      What are the mathematical properties of the problem?
-                      How can we leverage those properties to design better algorithms?
-                    </p>
-                    <p>
-                      I am actively looking for a <strong>postdoc position starting May–August 2026</strong>.
-                      Feel free to reach out!
-                    </p>
-                    <p style="text-align:center">
-                      <a href="mailto:Fangshuo.Liao@rice.edu">Email</a> &nbsp;/&nbsp;
-                      <a href="https://scholar.google.com/citations?user=WIwcFN8AAAAJ&hl=en">Google Scholar</a> &nbsp;/&nbsp;
-                      <a href="https://github.com/JLiao980706">GitHub</a> &nbsp;/&nbsp;
-                      <a href="https://www.linkedin.com/in/fangshuo-liao-698043141">LinkedIn</a> &nbsp;/&nbsp;
-                      <a href="https://jasperliao.github.io/uploads/resume.pdf">CV</a>
-                    </p>
+                    <p class="name" style="text-align:left;" id="bio-name"></p>
+                    <div id="bio-paragraphs"></div>
+                    <p style="text-align:center" id="bio-links"></p>
                   </td>
                   <td style="padding:2.5%;width:37%;max-width:37%;vertical-align:middle;text-align:center;">
                     <img style="width:80%;max-width:80%;object-fit:cover;" src="images/headshot.jpg" alt="Fangshuo Liao">
@@ -55,435 +29,20 @@
               </tbody>
             </table>
 
-            <!-- Publications -->
+            <!-- Publications heading -->
             <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
               <tbody>
                 <tr>
                   <td style="padding:20px;width:100%;vertical-align:middle">
                     <h2>Publications</h2>
-                    <p>
-                      * denotes equal contribution.
-                    </p>
+                    <p>* denotes equal contribution.</p>
                   </td>
                 </tr>
               </tbody>
             </table>
 
-            <!-- Paper: AdaPaD (preprint May 2026) -->
-            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-              <tbody>
-                <tr>
-                  <td style="padding:20px;width:25%;vertical-align:middle">
-                    <div class="venue-badge">Preprint<br>2026</div>
-                  </td>
-                  <td style="padding:20px;width:75%;vertical-align:middle">
-                    <a href="https://arxiv.org/abs/2605.10741">
-                      <span class="papertitle">AdaPaD: Adaptive Parallel Deflation for PEFT with Self-Correcting Rank Discovery</span>
-                    </a>
-                    <br>
-                    Barbara Su, <strong>Fangshuo Liao</strong>, Anastasios Kyrillidis
-                    <br>
-                    <em>arXiv preprint arXiv:2605.10741</em>, 2026
-                    <br>
-                    <a href="https://arxiv.org/abs/2605.10741">paper</a>
-                    <p>
-                      A fine-tuning method for LLMs that trains all rank-1 LoRA components simultaneously,
-                      with self-correcting deflation errors that converge to zero over rounds. Features
-                      per-module dynamic rank discovery and achieves competitive performance on GLUE/SQuAD
-                      with adapters ~30.7% smaller than baseline.
-                    </p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-
-            <!-- Paper: SGD at Edge of Stability (preprint Apr 2026) -->
-            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-              <tbody>
-                <tr>
-                  <td style="padding:20px;width:25%;vertical-align:middle">
-                    <div class="venue-badge">Preprint<br>2026</div>
-                  </td>
-                  <td style="padding:20px;width:75%;vertical-align:middle">
-                    <a href="https://arxiv.org/abs/2604.21016">
-                      <span class="papertitle">SGD at the Edge of Stability: The Stochastic Sharpness Gap</span>
-                    </a>
-                    <br>
-                    <strong>Fangshuo Liao</strong>, Afroditi Kolomvaki, Anastasios Kyrillidis
-                    <br>
-                    <em>arXiv preprint arXiv:2604.21016</em>, 2026
-                    <br>
-                    <a href="https://arxiv.org/abs/2604.21016">paper</a>
-                    <p>
-                      Extends the Edge of Stability phenomenon from full-batch GD to SGD.
-                      Introduces "stochastic self-stabilization" and derives a closed-form equation
-                      for the sharpness gap, showing smaller batch sizes correlate with flatter solutions.
-                    </p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-
-            <!-- Paper: Max-K-Cut / Discrete Quadratic (preprint Feb 2026) -->
-            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-              <tbody>
-                <tr>
-                  <td style="padding:20px;width:25%;vertical-align:middle">
-                    <div class="venue-badge">Preprint<br>2026</div>
-                  </td>
-                  <td style="padding:20px;width:75%;vertical-align:middle">
-                    <a href="https://arxiv.org/abs/2602.20376">
-                      <span class="papertitle">Exploiting Low-Rank Objective Structure in Discrete Quadratic Optimization</span>
-                    </a>
-                    <br>
-                    Ria Stevens, <strong>Fangshuo Liao</strong>, Barbara Su, Thanasis Hadjidimoulas, Jianqiang Li, Anastasios Kyrillidis
-                    <br>
-                    <em>arXiv preprint arXiv:2602.20376</em>, 2026
-                    <br>
-                    <a href="https://arxiv.org/abs/2602.20376">paper</a>
-                    <p>
-                      When the objective matrix has rank r, global maximizers of complex-valued quadratic forms
-                      over roots of unity belong to a candidate set of size O(rn<sup>2r-1</sup>), constructible
-                      efficiently via hyperplane arrangement enumeration. A randomized variant scales to problems
-                      exceeding one million variables.
-                    </p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-
-            <!-- Paper: Two-Layer NN Gaussian Masking (preprint Feb 2026) -->
-            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-              <tbody>
-                <tr>
-                  <td style="padding:20px;width:25%;vertical-align:middle">
-                    <div class="venue-badge">Preprint<br>2026</div>
-                  </td>
-                  <td style="padding:20px;width:75%;vertical-align:middle">
-                    <a href="https://arxiv.org/abs/2602.17423">
-                      <span class="papertitle">Convergence Analysis of Two-Layer Neural Networks under Gaussian Input Masking</span>
-                    </a>
-                    <br>
-                    Afroditi Kolomvaki, <strong>Fangshuo Liao</strong>, Evan Dramko, Ziyun Guang, Anastasios Kyrillidis
-                    <br>
-                    <em>arXiv preprint arXiv:2602.17423</em>, 2026
-                    <br>
-                    <a href="https://arxiv.org/abs/2602.17423">paper</a>
-                    <p>
-                      Via NTK analysis, shows two-layer ReLU networks trained with Gaussian-masked inputs achieve
-                      linear convergence up to an error proportional to the mask's variance. Applies to dropout,
-                      noisy sensors, privacy-preserving training, and federated learning.
-                    </p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-
-            <!-- Paper: Guided by the Experts (preprint Oct 2025) -->
-            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-              <tbody>
-                <tr>
-                  <td style="padding:20px;width:25%;vertical-align:middle">
-                    <div class="venue-badge">Preprint<br>2025</div>
-                  </td>
-                  <td style="padding:20px;width:75%;vertical-align:middle">
-                    <a href="https://arxiv.org/abs/2510.07205">
-                      <span class="papertitle">Guided by the Experts: Provable Feature Learning Dynamics of Soft-Routed Mixture-of-Experts</span>
-                    </a>
-                    <br>
-                    <strong>Fangshuo Liao</strong>, Anastasios Kyrillidis
-                    <br>
-                    <em>arXiv preprint arXiv:2510.07205</em>, 2025
-                    <br>
-                    <a href="https://arxiv.org/abs/2510.07205">paper</a> /
-                    <a href="https://github.com/JLiao980706/Guided_by_the_Experts">code</a>
-                    <p>
-                      First theoretical analysis of the optimization landscape of soft-routed MoE architectures.
-                      Proves that with sufficient over-parameterization, the router's learning is guided by the
-                      experts in a student-teacher setup, and post-training pruning followed by fine-tuning
-                      reaches global optimality.
-                    </p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-
-            <!-- Paper: Parallel Deflation (CPAL 2025) -->
-            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-              <tbody>
-                <tr>
-                  <td style="padding:20px;width:25%;vertical-align:middle">
-                    <div class="venue-badge">CPAL<br>2025</div>
-                  </td>
-                  <td style="padding:20px;width:75%;vertical-align:middle">
-                    <a href="https://arxiv.org/pdf/2502.17615">
-                      <span class="papertitle">Provable Model-Parallel Distributed Principal Component Analysis with Parallel Deflation</span>
-                    </a>
-                    <br>
-                    <strong>Fangshuo Liao</strong>, Wenyi Su, Anastasios Kyrillidis
-                    <br>
-                    <em>Conference on Parsimony and Learning (CPAL)</em>, 2025
-                    <br>
-                    <a href="https://arxiv.org/pdf/2502.17615">paper</a> /
-                    <a href="https://github.com/JLiao980706/ParallelDeflation">code</a> /
-                    <a href="https://jasperliao.github.io/uploads/parallel_defl_poster.pdf">poster</a>
-                    <p>
-                      A distributed PCA framework where workers each target a distinct eigenvector
-                      and refine via hierarchical updates from peer workers, inspired by the deflation method.
-                      Provides theoretical convergence analysis with low communication cost.
-                    </p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-
-            <!-- Paper: Learning to Specialize (NeurIPS 2024) -->
-            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-              <tbody>
-                <tr>
-                  <td style="padding:20px;width:25%;vertical-align:middle">
-                    <div class="venue-badge">NeurIPS<br>2024</div>
-                  </td>
-                  <td style="padding:20px;width:75%;vertical-align:middle">
-                    <a href="https://arxiv.org/abs/2306.08586">
-                      <span class="papertitle">Learning to Specialize: Joint Gating-Expert Training for Adaptive MoEs in Decentralized Settings</span>
-                    </a>
-                    <br>
-                    Yehya Farhat, Hamza ElMokhtar Shili, <strong>Fangshuo Liao</strong>, Chen Dun, Mirian Hipolito Garcia, Guoqing Zheng, Ahmed Hassan Awadallah, Robert Sim, Dimitrios Dimitriadis, Anastasios Kyrillidis
-                    <br>
-                    <em>Conference on Neural Information Processing Systems (NeurIPS)</em>, 2024
-                    <br>
-                    <a href="https://arxiv.org/abs/2306.08586">paper</a>
-                    <p>
-                      Investigates joint training of gating functions and experts (DDOME) to dynamically
-                      allocate domain-specific expertise across multiple data distributions in federated
-                      learning settings.
-                    </p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-
-            <!-- Paper: Nesterov's Momentum (ALT 2024) -->
-            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-              <tbody>
-                <tr>
-                  <td style="padding:20px;width:25%;vertical-align:middle">
-                    <div class="venue-badge">ALT<br>2024</div>
-                  </td>
-                  <td style="padding:20px;width:75%;vertical-align:middle">
-                    <a href="https://proceedings.mlr.press/v237/liao24a/liao24a.pdf">
-                      <span class="papertitle">Provable Accelerated Convergence of Nesterov's Momentum for Deep ReLU Neural Networks</span>
-                    </a>
-                    <br>
-                    <strong>Fangshuo Liao</strong>, Anastasios Kyrillidis
-                    <br>
-                    <em>International Conference on Algorithmic Learning Theory (ALT)</em>, 2024
-                    <br>
-                    <a href="https://proceedings.mlr.press/v237/liao24a/liao24a.pdf">paper</a> /
-                    <a href="https://jasperliao.github.io/uploads/nesterov_poster.pdf">poster</a>
-                    <p>
-                      Introduces "partial strong convexity" and proves Nesterov's momentum achieves acceleration
-                      for this class. First work to prove accelerated convergence for deep ReLU neural networks.
-                    </p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-
-            <!-- Paper: Error Propagation (ICML 2024) -->
-            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-              <tbody>
-                <tr>
-                  <td style="padding:20px;width:25%;vertical-align:middle">
-                    <div class="venue-badge">ICML<br>2024</div>
-                  </td>
-                  <td style="padding:20px;width:75%;vertical-align:middle">
-                    <a href="https://arxiv.org/pdf/2310.04283">
-                      <span class="papertitle">On the Error-Propagation of Inexact Hotelling's Deflation for Principal Component Analysis</span>
-                    </a>
-                    <br>
-                    <strong>Fangshuo Liao</strong>, J. Lyle Kim, Cruz Barnum, Anastasios Kyrillidis
-                    <br>
-                    <em>International Conference on Machine Learning (ICML)</em>, 2024
-                    <br>
-                    <a href="https://arxiv.org/pdf/2310.04283">paper</a> /
-                    <a href="https://jasperliao.github.io/uploads/err_prop_poster.pdf">poster</a>
-                    <p>
-                      Mathematically characterizes error propagation of inexact Hotelling's deflation in PCA.
-                      Derives explicit error bounds for both abstract sub-routines and power iteration as the
-                      eigenvector-finding procedure.
-                    </p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-
-            <!-- Paper: How Much Pre-training (TMLR 2024) -->
-            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-              <tbody>
-                <tr>
-                  <td style="padding:20px;width:25%;vertical-align:middle">
-                    <div class="venue-badge">TMLR<br>2024</div>
-                  </td>
-                  <td style="padding:20px;width:75%;vertical-align:middle">
-                    <a href="https://arxiv.org/pdf/2108.00259">
-                      <span class="papertitle">How Much Pre-training Is Enough to Discover a Good Subnetwork?</span>
-                    </a>
-                    <br>
-                    Cameron R. Wolfe*, <strong>Fangshuo Liao*</strong>, Qihan Wang, J. Lyle Kim, Anastasios Kyrillidis
-                    <br>
-                    <em>Transactions on Machine Learning Research (TMLR)</em>, 2024
-                    <br>
-                    <a href="https://arxiv.org/pdf/2108.00259">paper</a> /
-                    <a href="https://github.com/JLiao980706/lth_pretrain">code</a>
-                    <p>
-                      Derives a theoretical bound (logarithmic in dataset size) on the number of gradient descent
-                      pre-training steps needed before pruning yields a good subnetwork.
-                    </p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-
-            <!-- Paper: Scissorhands (NeurIPS 2023) -->
-            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-              <tbody>
-                <tr>
-                  <td style="padding:20px;width:25%;vertical-align:middle">
-                    <div class="venue-badge">NeurIPS<br>2023</div>
-                  </td>
-                  <td style="padding:20px;width:75%;vertical-align:middle">
-                    <a href="https://proceedings.neurips.cc/paper_files/paper/2023/file/a452a7c6c463e4ae8fbdc614c6e983e6-Paper-Conference.pdf">
-                      <span class="papertitle">Scissorhands: Exploiting the Persistence of Importance Hypothesis for LLM KV Cache Compression at Test Time</span>
-                    </a>
-                    <br>
-                    Zichang Liu, Aditya Desai, <strong>Fangshuo Liao</strong>, Weitao Wang, Victor Xie, Zhaozhuo Xu, Anastasios Kyrillidis, Anshumali Shrivastava
-                    <br>
-                    <em>Conference on Neural Information Processing Systems (NeurIPS)</em>, 2023
-                    <br>
-                    <a href="https://proceedings.neurips.cc/paper_files/paper/2023/file/a452a7c6c463e4ae8fbdc614c6e983e6-Paper-Conference.pdf">paper</a>
-                    <p>
-                      Reduces LLM KV cache memory by up to 5× without finetuning, based on the "persistence of
-                      importance" hypothesis that pivotal tokens remain influential across generation steps.
-                      Compatible with 4-bit quantization for further compression.
-                    </p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-
-            <!-- Paper: GIST (Journal 2023) -->
-            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-              <tbody>
-                <tr>
-                  <td style="padding:20px;width:25%;vertical-align:middle">
-                    <div class="venue-badge">J. Appl.<br>Comput.<br>Topology<br>2023</div>
-                  </td>
-                  <td style="padding:20px;width:75%;vertical-align:middle">
-                    <a href="https://arxiv.org/pdf/2102.10424">
-                      <span class="papertitle">GIST: Distributed Training for Large-Scale Graph Convolutional Networks</span>
-                    </a>
-                    <br>
-                    Cameron R. Wolfe*, Jingkang Yang*, <strong>Fangshuo Liao*</strong>, Arindam Chowdhury, Chen Dun, Artun Bayer, Santiago Segarra, Anastasios Kyrillidis
-                    <br>
-                    <em>Journal of Applied and Computational Topology</em>, 2023
-                    <br>
-                    <a href="https://arxiv.org/pdf/2102.10424">paper</a> /
-                    <a href="https://github.com/wolfecameron/GIST">code</a>
-                    <p>
-                      A distributed GCN training framework partitioning model parameters into smaller sub-GCNs
-                      trained independently in parallel. Trains a 32,768-dimensional GraphSAGE model
-                      (8× GPU capacity) to state-of-the-art on the Amazon2M dataset.
-                    </p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-
-            <!-- Paper: Strong LTH (AISTATS 2023) -->
-            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-              <tbody>
-                <tr>
-                  <td style="padding:20px;width:25%;vertical-align:middle">
-                    <div class="venue-badge">AISTATS<br>2023</div>
-                  </td>
-                  <td style="padding:20px;width:75%;vertical-align:middle">
-                    <a href="https://proceedings.mlr.press/v206/xiong23a/xiong23a.pdf">
-                      <span class="papertitle">Strong Lottery Ticket Hypothesis with &#949;-perturbation</span>
-                    </a>
-                    <br>
-                    Zheyang Xiong, <strong>Fangshuo Liao</strong>, Anastasios Kyrillidis
-                    <br>
-                    <em>International Conference on Artificial Intelligence and Statistics (AISTATS)</em>, 2023
-                    <br>
-                    <a href="https://proceedings.mlr.press/v206/xiong23a/xiong23a.pdf">paper</a> /
-                    <a href="https://github.com/JLiao980706/PerturbedSLTH">code</a> /
-                    <a href="https://jasperliao.github.io/uploads/slth_poster.pdf">poster</a>
-                    <p>
-                      Extends the strong Lottery Ticket Hypothesis to allow ε-scale perturbation on random
-                      initial weights, reducing the over-parameterization requirement by O(1/(1+ε)).
-                    </p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-
-            <!-- Paper: Shallow NN (TMLR 2022) -->
-            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-              <tbody>
-                <tr>
-                  <td style="padding:20px;width:25%;vertical-align:middle">
-                    <div class="venue-badge">TMLR<br>2022</div>
-                  </td>
-                  <td style="padding:20px;width:75%;vertical-align:middle">
-                    <a href="https://arxiv.org/pdf/2112.02668">
-                      <span class="papertitle">On the Convergence of Shallow Neural Network Training with Randomly Masked Neurons</span>
-                    </a>
-                    <br>
-                    <strong>Fangshuo Liao</strong>, Anastasios Kyrillidis
-                    <br>
-                    <em>Transactions on Machine Learning Research (TMLR)</em>, 2022
-                    <br>
-                    <a href="https://arxiv.org/pdf/2112.02668">paper</a>
-                    <p>
-                      Studies convergence of iteratively training randomly selected subnetworks (Dropout,
-                      Independent Subnet Training) in overparameterized single hidden-layer ReLU networks.
-                      Proves linear convergence rate to a neighborhood of the optimum.
-                    </p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-
-            <!-- Paper: LoFT (AISTATS 2022) -->
-            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-              <tbody>
-                <tr>
-                  <td style="padding:20px;width:25%;vertical-align:middle">
-                    <div class="venue-badge">AISTATS<br>2022</div>
-                  </td>
-                  <td style="padding:20px;width:75%;vertical-align:middle">
-                    <a href="https://arxiv.org/pdf/2210.16169">
-                      <span class="papertitle">LoFT: Finding Lottery Tickets through Filter-wise Training</span>
-                    </a>
-                    <br>
-                    Qihan Wang*, Chen Dun*, <strong>Fangshuo Liao*</strong>, Chris Jermaine, Anastasios Kyrillidis
-                    <br>
-                    <em>International Conference on Artificial Intelligence and Statistics (AISTATS)</em>, 2022
-                    <br>
-                    <a href="https://arxiv.org/pdf/2210.16169">paper</a> /
-                    <a href="https://github.com/dunchen/LOFT_release">code</a> /
-                    <a href="https://jasperliao.github.io/uploads/LOFT_poster.pdf">poster</a>
-                    <p>
-                      A filter distance metric identifies winning ticket subnetworks early in training.
-                      LoFT partitions CNN layers by filters trained independently in parallel,
-                      saving memory and communication while preserving lottery ticket quality.
-                    </p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+            <!-- Paper entries: rendered from data/papers.js -->
+            <div id="papers-container"></div>
 
             <!-- Footer -->
             <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
@@ -503,5 +62,53 @@
         </tr>
       </tbody>
     </table>
+
+    <!-- Load data files then render -->
+    <script src="data/bio.js"></script>
+    <script src="data/papers.js"></script>
+    <script>
+      // ── Render bio ──────────────────────────────────────────────────────────
+      document.getElementById("bio-name").textContent = bio.name;
+
+      const parasEl = document.getElementById("bio-paragraphs");
+      bio.paragraphs.forEach(function(text) {
+        const p = document.createElement("p");
+        p.innerHTML = text;
+        parasEl.appendChild(p);
+      });
+
+      const linksEl = document.getElementById("bio-links");
+      linksEl.innerHTML = bio.links.map(function(l) {
+        return '<a href="' + l.url + '">' + l.label + '</a>';
+      }).join(" &nbsp;/&nbsp; ");
+
+      // ── Render papers ───────────────────────────────────────────────────────
+      const container = document.getElementById("papers-container");
+
+      papers.forEach(function(p) {
+        const badgeHTML = p.badge.replace(/\n/g, "<br>");
+
+        const linkHTML = p.links.map(function(l) {
+          return '<a href="' + l.url + '">' + l.label + '</a>';
+        }).join(" /\n                    ");
+
+        const row = document.createElement("table");
+        row.style.cssText = "width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;";
+        row.innerHTML =
+          "<tbody><tr>" +
+            '<td style="padding:20px;width:25%;vertical-align:middle">' +
+              '<div class="venue-badge">' + badgeHTML + "</div>" +
+            "</td>" +
+            '<td style="padding:20px;width:75%;vertical-align:middle">' +
+              '<a href="' + p.url + '"><span class="papertitle">' + p.title + "</span></a><br>" +
+              p.authors + "<br>" +
+              "<em>" + p.venueFull + "</em><br>" +
+              linkHTML +
+              "<p>" + p.abstract + "</p>" +
+            "</td>" +
+          "</tr></tbody>";
+        container.appendChild(row);
+      });
+    </script>
   </body>
 </html>
