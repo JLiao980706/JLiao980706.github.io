@@ -21,15 +21,15 @@
 
 const papers = [
 
-  // ── 2026 preprints ──────────────────────────────────────────────────────────
+  // ── 2026 (preprint) ─────────────────────────────────────────────────────────
 
   {
     key: "adapad",
     title: "AdaPaD: Adaptive Parallel Deflation for PEFT with Self-Correcting Rank Discovery",
     url: "https://arxiv.org/abs/2605.10741",
-    badge: "Preprint\n2026",
+    badge: "NeurIPS\n2026",
     authors: "Barbara Su, <strong>Fangshuo Liao</strong>, Anastasios Kyrillidis",
-    venueFull: "arXiv preprint arXiv:2605.10741, 2026",
+    venueFull: "Conference on Neural Information Processing Systems (NeurIPS), 2026",
     links: [
       { label: "paper", url: "https://arxiv.org/abs/2605.10741" },
     ],
@@ -43,9 +43,9 @@ const papers = [
     key: "sgd_eos",
     title: "SGD at the Edge of Stability: The Stochastic Sharpness Gap",
     url: "https://arxiv.org/abs/2604.21016",
-    badge: "Preprint\n2026",
+    badge: "NeurIPS\n2026",
     authors: "<strong>Fangshuo Liao</strong>, Afroditi Kolomvaki, Anastasios Kyrillidis",
-    venueFull: "arXiv preprint arXiv:2604.21016, 2026",
+    venueFull: "Conference on Neural Information Processing Systems (NeurIPS), 2026",
     links: [
       { label: "paper", url: "https://arxiv.org/abs/2604.21016" },
     ],
@@ -70,30 +70,15 @@ const papers = [
       exceeding one million variables.`,
   },
 
-  {
-    key: "gaussian_masking",
-    title: "Convergence Analysis of Two-Layer Neural Networks under Gaussian Input Masking",
-    url: "https://arxiv.org/abs/2602.17423",
-    badge: "Preprint\n2026",
-    authors: "Afroditi Kolomvaki, <strong>Fangshuo Liao</strong>, Evan Dramko, Ziyun Guang, Anastasios Kyrillidis",
-    venueFull: "arXiv preprint arXiv:2602.17423, 2026",
-    links: [
-      { label: "paper", url: "https://arxiv.org/abs/2602.17423" },
-    ],
-    abstract: `Via NTK analysis, shows two-layer ReLU networks trained with Gaussian-masked inputs achieve
-      linear convergence up to an error proportional to the mask's variance. Applies to dropout,
-      noisy sensors, privacy-preserving training, and federated learning.`,
-  },
-
-  // ── 2025 ────────────────────────────────────────────────────────────────────
+  // ── 2026 (conference) ────────────────────────────────────────────────────────
 
   {
     key: "guided_experts",
     title: "Guided by the Experts: Provable Feature Learning Dynamics of Soft-Routed Mixture-of-Experts",
     url: "https://arxiv.org/abs/2510.07205",
-    badge: "Preprint\n2025",
+    badge: "AISTATS\n2026",
     authors: "<strong>Fangshuo Liao</strong>, Anastasios Kyrillidis",
-    venueFull: "arXiv preprint arXiv:2510.07205, 2025",
+    venueFull: "International Conference on Artificial Intelligence and Statistics (AISTATS), 2026",
     links: [
       { label: "paper", url: "https://arxiv.org/abs/2510.07205" },
       { label: "code",  url: "https://github.com/JLiao980706/Guided_by_the_Experts" },
@@ -103,6 +88,8 @@ const papers = [
       experts in a student-teacher setup, and post-training pruning followed by fine-tuning
       reaches global optimality.`,
   },
+
+  // ── 2025 ────────────────────────────────────────────────────────────────────
 
   {
     key: "parallel_deflation",
@@ -121,15 +108,13 @@ const papers = [
       Provides theoretical convergence analysis with low communication cost.`,
   },
 
-  // ── 2024 ────────────────────────────────────────────────────────────────────
-
   {
     key: "ddome",
     title: "Learning to Specialize: Joint Gating-Expert Training for Adaptive MoEs in Decentralized Settings",
     url: "https://arxiv.org/abs/2306.08586",
-    badge: "NeurIPS\n2024",
+    badge: "NeurIPS\n2025",
     authors: "Yehya Farhat, Hamza ElMokhtar Shili, <strong>Fangshuo Liao</strong>, Chen Dun, Mirian Hipolito Garcia, Guoqing Zheng, Ahmed Hassan Awadallah, Robert Sim, Dimitrios Dimitriadis, Anastasios Kyrillidis",
-    venueFull: "Conference on Neural Information Processing Systems (NeurIPS), 2024",
+    venueFull: "Conference on Neural Information Processing Systems (NeurIPS), 2025",
     links: [
       { label: "paper", url: "https://arxiv.org/abs/2306.08586" },
     ],
