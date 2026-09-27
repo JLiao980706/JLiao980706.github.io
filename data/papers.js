@@ -29,7 +29,7 @@ const papers = [
     url: "https://arxiv.org/abs/2605.10741",
     badge: "NeurIPS\n2026",
     authors: "Barbara Su, <strong>Fangshuo Liao</strong>, Anastasios Kyrillidis",
-    venueFull: "Conference on Neural Information Processing Systems (NeurIPS), 2026",
+    venueFull: "NeurIPS 2026",
     links: [
       { label: "paper", url: "https://arxiv.org/abs/2605.10741" },
     ],
@@ -45,7 +45,7 @@ const papers = [
     url: "https://arxiv.org/abs/2604.21016",
     badge: "NeurIPS\n2026",
     authors: "<strong>Fangshuo Liao</strong>, Afroditi Kolomvaki, Anastasios Kyrillidis",
-    venueFull: "Conference on Neural Information Processing Systems (NeurIPS), 2026",
+    venueFull: "NeurIPS 2026",
     links: [
       { label: "paper", url: "https://arxiv.org/abs/2604.21016" },
     ],
@@ -60,7 +60,7 @@ const papers = [
     url: "https://arxiv.org/abs/2602.20376",
     badge: "Preprint\n2026",
     authors: "Ria Stevens, <strong>Fangshuo Liao</strong>, Barbara Su, Thanasis Hadjidimoulas, Jianqiang Li, Anastasios Kyrillidis",
-    venueFull: "arXiv preprint arXiv:2602.20376, 2026",
+    venueFull: "arXiv:2602.20376",
     links: [
       { label: "paper", url: "https://arxiv.org/abs/2602.20376" },
     ],
@@ -78,7 +78,7 @@ const papers = [
     url: "https://arxiv.org/abs/2510.07205",
     badge: "AISTATS\n2026",
     authors: "<strong>Fangshuo Liao</strong>, Anastasios Kyrillidis",
-    venueFull: "International Conference on Artificial Intelligence and Statistics (AISTATS), 2026",
+    venueFull: "AISTATS 2026",
     links: [
       { label: "paper", url: "https://arxiv.org/abs/2510.07205" },
       { label: "code",  url: "https://github.com/JLiao980706/Guided_by_the_Experts" },
@@ -97,7 +97,7 @@ const papers = [
     url: "https://arxiv.org/pdf/2502.17615",
     badge: "CPAL\n2025",
     authors: "<strong>Fangshuo Liao</strong>, Wenyi Su, Anastasios Kyrillidis",
-    venueFull: "Conference on Parsimony and Learning (CPAL), 2025",
+    venueFull: "CPAL 2025",
     links: [
       { label: "paper",  url: "https://arxiv.org/pdf/2502.17615" },
       { label: "code",   url: "https://github.com/JLiao980706/ParallelDeflation" },
@@ -114,7 +114,7 @@ const papers = [
     url: "https://arxiv.org/abs/2306.08586",
     badge: "NeurIPS\n2025",
     authors: "Yehya Farhat, Hamza ElMokhtar Shili, <strong>Fangshuo Liao</strong>, Chen Dun, Mirian Hipolito Garcia, Guoqing Zheng, Ahmed Hassan Awadallah, Robert Sim, Dimitrios Dimitriadis, Anastasios Kyrillidis",
-    venueFull: "Conference on Neural Information Processing Systems (NeurIPS), 2025",
+    venueFull: "NeurIPS 2025",
     links: [
       { label: "paper", url: "https://arxiv.org/abs/2306.08586" },
     ],
@@ -129,7 +129,7 @@ const papers = [
     url: "https://proceedings.mlr.press/v237/liao24a/liao24a.pdf",
     badge: "ALT\n2024",
     authors: "<strong>Fangshuo Liao</strong>, Anastasios Kyrillidis",
-    venueFull: "International Conference on Algorithmic Learning Theory (ALT), 2024",
+    venueFull: "ALT 2024",
     links: [
       { label: "paper",  url: "https://proceedings.mlr.press/v237/liao24a/liao24a.pdf" },
       { label: "poster", url: "https://jasperliao.github.io/uploads/nesterov_poster.pdf" },
@@ -144,7 +144,7 @@ const papers = [
     url: "https://arxiv.org/pdf/2310.04283",
     badge: "ICML\n2024",
     authors: "<strong>Fangshuo Liao</strong>, J. Lyle Kim, Cruz Barnum, Anastasios Kyrillidis",
-    venueFull: "International Conference on Machine Learning (ICML), 2024",
+    venueFull: "ICML 2024",
     links: [
       { label: "paper",  url: "https://arxiv.org/pdf/2310.04283" },
       { label: "poster", url: "https://jasperliao.github.io/uploads/err_prop_poster.pdf" },
@@ -160,7 +160,7 @@ const papers = [
     url: "https://arxiv.org/pdf/2108.00259",
     badge: "TMLR\n2024",
     authors: "Cameron R. Wolfe*, <strong>Fangshuo Liao*</strong>, Qihan Wang, J. Lyle Kim, Anastasios Kyrillidis",
-    venueFull: "Transactions on Machine Learning Research (TMLR), 2024",
+    venueFull: "TMLR 2024",
     links: [
       { label: "paper", url: "https://arxiv.org/pdf/2108.00259" },
       { label: "code",  url: "https://github.com/JLiao980706/lth_pretrain" },
@@ -177,7 +177,7 @@ const papers = [
     url: "https://proceedings.neurips.cc/paper_files/paper/2023/file/a452a7c6c463e4ae8fbdc614c6e983e6-Paper-Conference.pdf",
     badge: "NeurIPS\n2023",
     authors: "Zichang Liu, Aditya Desai, <strong>Fangshuo Liao</strong>, Weitao Wang, Victor Xie, Zhaozhuo Xu, Anastasios Kyrillidis, Anshumali Shrivastava",
-    venueFull: "Conference on Neural Information Processing Systems (NeurIPS), 2023",
+    venueFull: "NeurIPS 2023",
     links: [
       { label: "paper", url: "https://proceedings.neurips.cc/paper_files/paper/2023/file/a452a7c6c463e4ae8fbdc614c6e983e6-Paper-Conference.pdf" },
     ],
@@ -192,7 +192,7 @@ const papers = [
     url: "https://arxiv.org/pdf/2102.10424",
     badge: "J. Appl.\nComput.\nTopology\n2023",
     authors: "Cameron R. Wolfe*, Jingkang Yang*, <strong>Fangshuo Liao*</strong>, Arindam Chowdhury, Chen Dun, Artun Bayer, Santiago Segarra, Anastasios Kyrillidis",
-    venueFull: "Journal of Applied and Computational Topology, 2023",
+    venueFull: "J. Appl. Comput. Topology 2023",
     links: [
       { label: "paper", url: "https://arxiv.org/pdf/2102.10424" },
       { label: "code",  url: "https://github.com/wolfecameron/GIST" },
@@ -208,7 +208,7 @@ const papers = [
     url: "https://proceedings.mlr.press/v206/xiong23a/xiong23a.pdf",
     badge: "AISTATS\n2023",
     authors: "Zheyang Xiong, <strong>Fangshuo Liao</strong>, Anastasios Kyrillidis",
-    venueFull: "International Conference on Artificial Intelligence and Statistics (AISTATS), 2023",
+    venueFull: "AISTATS 2023",
     links: [
       { label: "paper",  url: "https://proceedings.mlr.press/v206/xiong23a/xiong23a.pdf" },
       { label: "code",   url: "https://github.com/JLiao980706/PerturbedSLTH" },
@@ -226,7 +226,7 @@ const papers = [
     url: "https://arxiv.org/pdf/2112.02668",
     badge: "TMLR\n2022",
     authors: "<strong>Fangshuo Liao</strong>, Anastasios Kyrillidis",
-    venueFull: "Transactions on Machine Learning Research (TMLR), 2022",
+    venueFull: "TMLR 2022",
     links: [
       { label: "paper", url: "https://arxiv.org/pdf/2112.02668" },
     ],
@@ -241,7 +241,7 @@ const papers = [
     url: "https://arxiv.org/pdf/2210.16169",
     badge: "AISTATS\n2022",
     authors: "Qihan Wang*, Chen Dun*, <strong>Fangshuo Liao*</strong>, Chris Jermaine, Anastasios Kyrillidis",
-    venueFull: "International Conference on Artificial Intelligence and Statistics (AISTATS), 2022",
+    venueFull: "AISTATS 2022",
     links: [
       { label: "paper",  url: "https://arxiv.org/pdf/2210.16169" },
       { label: "code",   url: "https://github.com/dunchen/LOFT_release" },
