@@ -103,3 +103,48 @@ span.highlight {
   padding: 8px;
   box-sizing: border-box;
 }
+
+/* ── Mobile responsive ────────────────────────────────────────────────────── */
+@media screen and (max-width: 600px) {
+
+  /* Name size */
+  .name { font-size: 24px; }
+
+  /* Header: stack photo above bio */
+  .header-row { display: flex; flex-wrap: wrap; }
+  .header-photo {
+    display: block;
+    width: 100% !important;
+    max-width: 100% !important;
+    text-align: center;
+    padding: 16px !important;
+    box-sizing: border-box;
+    order: -1;
+  }
+  .header-photo img {
+    width: 45% !important;
+    max-width: 180px !important;
+  }
+  .header-bio {
+    display: block;
+    width: 100% !important;
+    padding: 8px 16px !important;
+    box-sizing: border-box;
+  }
+
+  /* Paper rows: stack image above text */
+  .paper-row { display: flex; flex-wrap: wrap; }
+  .paper-img-cell {
+    display: block;
+    width: 100% !important;
+    padding: 10px 16px 0 !important;
+    box-sizing: border-box;
+  }
+  .paper-img-cell img { max-height: 180px; width: auto; margin: 0 auto; }
+  .paper-txt-cell {
+    display: block;
+    width: 100% !important;
+    padding: 8px 16px 16px !important;
+    box-sizing: border-box;
+  }
+}

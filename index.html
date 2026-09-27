@@ -16,13 +16,13 @@
             <!-- Bio section: content comes from data/bio.js -->
             <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
               <tbody>
-                <tr style="padding:0px">
-                  <td style="padding:2.5%;width:63%;vertical-align:middle">
+                <tr class="header-row" style="padding:0px">
+                  <td class="header-bio" style="padding:2.5%;width:63%;vertical-align:middle">
                     <p class="name" style="text-align:left;" id="bio-name"></p>
                     <div id="bio-paragraphs"></div>
                     <p style="text-align:center" id="bio-links"></p>
                   </td>
-                  <td style="padding:2.5%;width:37%;max-width:37%;vertical-align:middle;text-align:center;">
+                  <td class="header-photo" style="padding:2.5%;width:37%;max-width:37%;vertical-align:middle;text-align:center;">
                     <img style="width:80%;max-width:80%;object-fit:cover;" src="images/headshot.jpg" alt="Fangshuo Liao">
                   </td>
                 </tr>
@@ -103,11 +103,11 @@
         const row = document.createElement("table");
         row.style.cssText = "width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;";
         row.innerHTML =
-          "<tbody><tr>" +
-            '<td style="padding:20px 8px;width:25%;vertical-align:middle">' +
+          '<tbody><tr class="paper-row">' +
+            '<td class="paper-img-cell" style="padding:20px 8px;width:25%;vertical-align:middle">' +
               leftCellHTML +
             "</td>" +
-            '<td style="padding:20px;width:75%;vertical-align:middle">' +
+            '<td class="paper-txt-cell" style="padding:20px;width:75%;vertical-align:middle">' +
               '<a href="' + p.url + '"><span class="papertitle">' + p.title + "</span></a><br>" +
               p.authors + "<br>" +
               "<em>" + p.venueFull + "</em><br>" +
