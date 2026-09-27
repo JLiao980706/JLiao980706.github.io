@@ -69,7 +69,146 @@
               </tbody>
             </table>
 
-            <!-- Paper: Parallel Deflation -->
+            <!-- Paper: AdaPaD (preprint May 2026) -->
+            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+              <tbody>
+                <tr>
+                  <td style="padding:20px;width:25%;vertical-align:middle">
+                    <div class="venue-badge">Preprint<br>2026</div>
+                  </td>
+                  <td style="padding:20px;width:75%;vertical-align:middle">
+                    <a href="https://arxiv.org/abs/2605.10741">
+                      <span class="papertitle">AdaPaD: Adaptive Parallel Deflation for PEFT with Self-Correcting Rank Discovery</span>
+                    </a>
+                    <br>
+                    Barbara Su, <strong>Fangshuo Liao</strong>, Anastasios Kyrillidis
+                    <br>
+                    <em>arXiv preprint arXiv:2605.10741</em>, 2026
+                    <br>
+                    <a href="https://arxiv.org/abs/2605.10741">paper</a>
+                    <p>
+                      A fine-tuning method for LLMs that trains all rank-1 LoRA components simultaneously,
+                      with self-correcting deflation errors that converge to zero over rounds. Features
+                      per-module dynamic rank discovery and achieves competitive performance on GLUE/SQuAD
+                      with adapters ~30.7% smaller than baseline.
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <!-- Paper: SGD at Edge of Stability (preprint Apr 2026) -->
+            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+              <tbody>
+                <tr>
+                  <td style="padding:20px;width:25%;vertical-align:middle">
+                    <div class="venue-badge">Preprint<br>2026</div>
+                  </td>
+                  <td style="padding:20px;width:75%;vertical-align:middle">
+                    <a href="https://arxiv.org/abs/2604.21016">
+                      <span class="papertitle">SGD at the Edge of Stability: The Stochastic Sharpness Gap</span>
+                    </a>
+                    <br>
+                    <strong>Fangshuo Liao</strong>, Afroditi Kolomvaki, Anastasios Kyrillidis
+                    <br>
+                    <em>arXiv preprint arXiv:2604.21016</em>, 2026
+                    <br>
+                    <a href="https://arxiv.org/abs/2604.21016">paper</a>
+                    <p>
+                      Extends the Edge of Stability phenomenon from full-batch GD to SGD.
+                      Introduces "stochastic self-stabilization" and derives a closed-form equation
+                      for the sharpness gap, showing smaller batch sizes correlate with flatter solutions.
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <!-- Paper: Max-K-Cut / Discrete Quadratic (preprint Feb 2026) -->
+            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+              <tbody>
+                <tr>
+                  <td style="padding:20px;width:25%;vertical-align:middle">
+                    <div class="venue-badge">Preprint<br>2026</div>
+                  </td>
+                  <td style="padding:20px;width:75%;vertical-align:middle">
+                    <a href="https://arxiv.org/abs/2602.20376">
+                      <span class="papertitle">Exploiting Low-Rank Objective Structure in Discrete Quadratic Optimization</span>
+                    </a>
+                    <br>
+                    Ria Stevens, <strong>Fangshuo Liao</strong>, Barbara Su, Thanasis Hadjidimoulas, Jianqiang Li, Anastasios Kyrillidis
+                    <br>
+                    <em>arXiv preprint arXiv:2602.20376</em>, 2026
+                    <br>
+                    <a href="https://arxiv.org/abs/2602.20376">paper</a>
+                    <p>
+                      When the objective matrix has rank r, global maximizers of complex-valued quadratic forms
+                      over roots of unity belong to a candidate set of size O(rn<sup>2r-1</sup>), constructible
+                      efficiently via hyperplane arrangement enumeration. A randomized variant scales to problems
+                      exceeding one million variables.
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <!-- Paper: Two-Layer NN Gaussian Masking (preprint Feb 2026) -->
+            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+              <tbody>
+                <tr>
+                  <td style="padding:20px;width:25%;vertical-align:middle">
+                    <div class="venue-badge">Preprint<br>2026</div>
+                  </td>
+                  <td style="padding:20px;width:75%;vertical-align:middle">
+                    <a href="https://arxiv.org/abs/2602.17423">
+                      <span class="papertitle">Convergence Analysis of Two-Layer Neural Networks under Gaussian Input Masking</span>
+                    </a>
+                    <br>
+                    Afroditi Kolomvaki, <strong>Fangshuo Liao</strong>, Evan Dramko, Ziyun Guang, Anastasios Kyrillidis
+                    <br>
+                    <em>arXiv preprint arXiv:2602.17423</em>, 2026
+                    <br>
+                    <a href="https://arxiv.org/abs/2602.17423">paper</a>
+                    <p>
+                      Via NTK analysis, shows two-layer ReLU networks trained with Gaussian-masked inputs achieve
+                      linear convergence up to an error proportional to the mask's variance. Applies to dropout,
+                      noisy sensors, privacy-preserving training, and federated learning.
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <!-- Paper: Guided by the Experts (preprint Oct 2025) -->
+            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+              <tbody>
+                <tr>
+                  <td style="padding:20px;width:25%;vertical-align:middle">
+                    <div class="venue-badge">Preprint<br>2025</div>
+                  </td>
+                  <td style="padding:20px;width:75%;vertical-align:middle">
+                    <a href="https://arxiv.org/abs/2510.07205">
+                      <span class="papertitle">Guided by the Experts: Provable Feature Learning Dynamics of Soft-Routed Mixture-of-Experts</span>
+                    </a>
+                    <br>
+                    <strong>Fangshuo Liao</strong>, Anastasios Kyrillidis
+                    <br>
+                    <em>arXiv preprint arXiv:2510.07205</em>, 2025
+                    <br>
+                    <a href="https://arxiv.org/abs/2510.07205">paper</a> /
+                    <a href="https://github.com/JLiao980706/Guided_by_the_Experts">code</a>
+                    <p>
+                      First theoretical analysis of the optimization landscape of soft-routed MoE architectures.
+                      Proves that with sufficient over-parameterization, the router's learning is guided by the
+                      experts in a student-teacher setup, and post-training pruning followed by fine-tuning
+                      reaches global optimality.
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <!-- Paper: Parallel Deflation (CPAL 2025) -->
             <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
               <tbody>
                 <tr>
@@ -91,14 +230,41 @@
                     <p>
                       A distributed PCA framework where workers each target a distinct eigenvector
                       and refine via hierarchical updates from peer workers, inspired by the deflation method.
-                      Provides theoretical convergence analysis of asynchronous updates with low communication cost.
+                      Provides theoretical convergence analysis with low communication cost.
                     </p>
                   </td>
                 </tr>
               </tbody>
             </table>
 
-            <!-- Paper: Nesterov's Momentum -->
+            <!-- Paper: Learning to Specialize (NeurIPS 2024) -->
+            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+              <tbody>
+                <tr>
+                  <td style="padding:20px;width:25%;vertical-align:middle">
+                    <div class="venue-badge">NeurIPS<br>2024</div>
+                  </td>
+                  <td style="padding:20px;width:75%;vertical-align:middle">
+                    <a href="https://arxiv.org/abs/2306.08586">
+                      <span class="papertitle">Learning to Specialize: Joint Gating-Expert Training for Adaptive MoEs in Decentralized Settings</span>
+                    </a>
+                    <br>
+                    Yehya Farhat, Hamza ElMokhtar Shili, <strong>Fangshuo Liao</strong>, Chen Dun, Mirian Hipolito Garcia, Guoqing Zheng, Ahmed Hassan Awadallah, Robert Sim, Dimitrios Dimitriadis, Anastasios Kyrillidis
+                    <br>
+                    <em>Conference on Neural Information Processing Systems (NeurIPS)</em>, 2024
+                    <br>
+                    <a href="https://arxiv.org/abs/2306.08586">paper</a>
+                    <p>
+                      Investigates joint training of gating functions and experts (DDOME) to dynamically
+                      allocate domain-specific expertise across multiple data distributions in federated
+                      learning settings.
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <!-- Paper: Nesterov's Momentum (ALT 2024) -->
             <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
               <tbody>
                 <tr>
@@ -117,16 +283,15 @@
                     <a href="https://proceedings.mlr.press/v237/liao24a/liao24a.pdf">paper</a> /
                     <a href="https://jasperliao.github.io/uploads/nesterov_poster.pdf">poster</a>
                     <p>
-                      Introduces a new class of objective functions with "partial strong convexity" and proves
-                      Nesterov's momentum achieves acceleration for this class. First work to prove accelerated
-                      convergence for deep ReLU neural network architectures.
+                      Introduces "partial strong convexity" and proves Nesterov's momentum achieves acceleration
+                      for this class. First work to prove accelerated convergence for deep ReLU neural networks.
                     </p>
                   </td>
                 </tr>
               </tbody>
             </table>
 
-            <!-- Paper: Error Propagation -->
+            <!-- Paper: Error Propagation (ICML 2024) -->
             <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
               <tbody>
                 <tr>
@@ -145,16 +310,16 @@
                     <a href="https://arxiv.org/pdf/2310.04283">paper</a> /
                     <a href="https://jasperliao.github.io/uploads/err_prop_poster.pdf">poster</a>
                     <p>
-                      Mathematically characterizes error propagation of the inexact Hotelling's deflation method
-                      in PCA. Derives explicit error bounds for both abstract sub-routines and power iteration
-                      as the eigenvector-finding procedure.
+                      Mathematically characterizes error propagation of inexact Hotelling's deflation in PCA.
+                      Derives explicit error bounds for both abstract sub-routines and power iteration as the
+                      eigenvector-finding procedure.
                     </p>
                   </td>
                 </tr>
               </tbody>
             </table>
 
-            <!-- Paper: How Much Pre-training -->
+            <!-- Paper: How Much Pre-training (TMLR 2024) -->
             <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
               <tbody>
                 <tr>
@@ -181,7 +346,7 @@
               </tbody>
             </table>
 
-            <!-- Paper: Scissorhands -->
+            <!-- Paper: Scissorhands (NeurIPS 2023) -->
             <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
               <tbody>
                 <tr>
@@ -199,16 +364,16 @@
                     <br>
                     <a href="https://proceedings.neurips.cc/paper_files/paper/2023/file/a452a7c6c463e4ae8fbdc614c6e983e6-Paper-Conference.pdf">paper</a>
                     <p>
-                      Proposes SCISSORHANDS, which reduces LLM KV cache memory by up to 5× without finetuning,
-                      based on the "persistence of importance" hypothesis that pivotal tokens remain influential
-                      across generation steps. Compatible with 4-bit quantization for further compression.
+                      Reduces LLM KV cache memory by up to 5× without finetuning, based on the "persistence of
+                      importance" hypothesis that pivotal tokens remain influential across generation steps.
+                      Compatible with 4-bit quantization for further compression.
                     </p>
                   </td>
                 </tr>
               </tbody>
             </table>
 
-            <!-- Paper: GIST -->
+            <!-- Paper: GIST (Journal 2023) -->
             <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
               <tbody>
                 <tr>
@@ -227,16 +392,16 @@
                     <a href="https://arxiv.org/pdf/2102.10424">paper</a> /
                     <a href="https://github.com/wolfecameron/GIST">code</a>
                     <p>
-                      Proposes GIST, a distributed GCN training framework that partitions model parameters into
-                      smaller sub-GCNs trained independently in parallel. Trains a 32,768-dimensional GraphSAGE
-                      model (8× GPU capacity) to state-of-the-art on the Amazon2M dataset.
+                      A distributed GCN training framework partitioning model parameters into smaller sub-GCNs
+                      trained independently in parallel. Trains a 32,768-dimensional GraphSAGE model
+                      (8× GPU capacity) to state-of-the-art on the Amazon2M dataset.
                     </p>
                   </td>
                 </tr>
               </tbody>
             </table>
 
-            <!-- Paper: Strong LTH -->
+            <!-- Paper: Strong LTH (AISTATS 2023) -->
             <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
               <tbody>
                 <tr>
@@ -264,7 +429,7 @@
               </tbody>
             </table>
 
-            <!-- Paper: Shallow NN -->
+            <!-- Paper: Shallow NN (TMLR 2022) -->
             <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
               <tbody>
                 <tr>
@@ -291,7 +456,7 @@
               </tbody>
             </table>
 
-            <!-- Paper: LoFT -->
+            <!-- Paper: LoFT (AISTATS 2022) -->
             <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
               <tbody>
                 <tr>
@@ -311,9 +476,9 @@
                     <a href="https://github.com/dunchen/LOFT_release">code</a> /
                     <a href="https://jasperliao.github.io/uploads/LOFT_poster.pdf">poster</a>
                     <p>
-                      Proposes a novel filter distance metric to identify winning ticket subnetworks early in
-                      training, then designs LoFT — a model-parallel pretraining algorithm that partitions CNN
-                      layers by filters trained independently, saving memory and communication.
+                      A filter distance metric identifies winning ticket subnetworks early in training.
+                      LoFT partitions CNN layers by filters trained independently in parallel,
+                      saving memory and communication while preserving lottery ticket quality.
                     </p>
                   </td>
                 </tr>
