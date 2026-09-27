@@ -3,6 +3,10 @@
 // ============================================================
 //
 //  Field reference:
+//    key        — short unique identifier (letters/numbers/underscores).
+//                 Drop a file named "{key}.png" into images/papers/ and it
+//                 will appear as the paper thumbnail automatically.
+//                 If no image is found the venue badge is shown instead.
 //    title      — paper title (plain text)
 //    url        — link for the title click (usually arXiv or proceedings PDF)
 //    badge      — text shown in the left badge box; use \n for line breaks
@@ -20,6 +24,7 @@ const papers = [
   // ── 2026 preprints ──────────────────────────────────────────────────────────
 
   {
+    key: "adapad",
     title: "AdaPaD: Adaptive Parallel Deflation for PEFT with Self-Correcting Rank Discovery",
     url: "https://arxiv.org/abs/2605.10741",
     badge: "Preprint\n2026",
@@ -35,6 +40,7 @@ const papers = [
   },
 
   {
+    key: "sgd_eos",
     title: "SGD at the Edge of Stability: The Stochastic Sharpness Gap",
     url: "https://arxiv.org/abs/2604.21016",
     badge: "Preprint\n2026",
@@ -49,6 +55,7 @@ const papers = [
   },
 
   {
+    key: "lowrank_quadratic",
     title: "Exploiting Low-Rank Objective Structure in Discrete Quadratic Optimization",
     url: "https://arxiv.org/abs/2602.20376",
     badge: "Preprint\n2026",
@@ -64,6 +71,7 @@ const papers = [
   },
 
   {
+    key: "gaussian_masking",
     title: "Convergence Analysis of Two-Layer Neural Networks under Gaussian Input Masking",
     url: "https://arxiv.org/abs/2602.17423",
     badge: "Preprint\n2026",
@@ -80,6 +88,7 @@ const papers = [
   // ── 2025 ────────────────────────────────────────────────────────────────────
 
   {
+    key: "guided_experts",
     title: "Guided by the Experts: Provable Feature Learning Dynamics of Soft-Routed Mixture-of-Experts",
     url: "https://arxiv.org/abs/2510.07205",
     badge: "Preprint\n2025",
@@ -96,6 +105,7 @@ const papers = [
   },
 
   {
+    key: "parallel_deflation",
     title: "Provable Model-Parallel Distributed Principal Component Analysis with Parallel Deflation",
     url: "https://arxiv.org/pdf/2502.17615",
     badge: "CPAL\n2025",
@@ -114,6 +124,7 @@ const papers = [
   // ── 2024 ────────────────────────────────────────────────────────────────────
 
   {
+    key: "ddome",
     title: "Learning to Specialize: Joint Gating-Expert Training for Adaptive MoEs in Decentralized Settings",
     url: "https://arxiv.org/abs/2306.08586",
     badge: "NeurIPS\n2024",
@@ -128,6 +139,7 @@ const papers = [
   },
 
   {
+    key: "nesterov",
     title: "Provable Accelerated Convergence of Nesterov's Momentum for Deep ReLU Neural Networks",
     url: "https://proceedings.mlr.press/v237/liao24a/liao24a.pdf",
     badge: "ALT\n2024",
@@ -142,6 +154,7 @@ const papers = [
   },
 
   {
+    key: "err_propagation",
     title: "On the Error-Propagation of Inexact Hotelling's Deflation for Principal Component Analysis",
     url: "https://arxiv.org/pdf/2310.04283",
     badge: "ICML\n2024",
@@ -157,6 +170,7 @@ const papers = [
   },
 
   {
+    key: "lth_pretrain",
     title: "How Much Pre-training Is Enough to Discover a Good Subnetwork?",
     url: "https://arxiv.org/pdf/2108.00259",
     badge: "TMLR\n2024",
@@ -173,6 +187,7 @@ const papers = [
   // ── 2023 ────────────────────────────────────────────────────────────────────
 
   {
+    key: "scissorhands",
     title: "Scissorhands: Exploiting the Persistence of Importance Hypothesis for LLM KV Cache Compression at Test Time",
     url: "https://proceedings.neurips.cc/paper_files/paper/2023/file/a452a7c6c463e4ae8fbdc614c6e983e6-Paper-Conference.pdf",
     badge: "NeurIPS\n2023",
@@ -187,6 +202,7 @@ const papers = [
   },
 
   {
+    key: "gist",
     title: "GIST: Distributed Training for Large-Scale Graph Convolutional Networks",
     url: "https://arxiv.org/pdf/2102.10424",
     badge: "J. Appl.\nComput.\nTopology\n2023",
@@ -202,6 +218,7 @@ const papers = [
   },
 
   {
+    key: "slth_eps",
     title: "Strong Lottery Ticket Hypothesis with ε-perturbation",
     url: "https://proceedings.mlr.press/v206/xiong23a/xiong23a.pdf",
     badge: "AISTATS\n2023",
@@ -219,6 +236,7 @@ const papers = [
   // ── 2022 ────────────────────────────────────────────────────────────────────
 
   {
+    key: "shallow_nn_masking",
     title: "On the Convergence of Shallow Neural Network Training with Randomly Masked Neurons",
     url: "https://arxiv.org/pdf/2112.02668",
     badge: "TMLR\n2022",
@@ -233,6 +251,7 @@ const papers = [
   },
 
   {
+    key: "loft",
     title: "LoFT: Finding Lottery Tickets through Filter-wise Training",
     url: "https://arxiv.org/pdf/2210.16169",
     badge: "AISTATS\n2022",
