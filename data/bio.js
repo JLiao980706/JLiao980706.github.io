@@ -19,7 +19,7 @@ const bio = {
     `I am primarily interested in a scientific and theoretical understanding of 
     various aspects in machine learning, including optimization, representation, 
     generalization, and scaling behaviors. I am also interested in applying such
-    understanding to development of practical approaches.`
+    understanding to the development of practical approaches.`
   ],
 
   // Social / nav links shown below the bio
